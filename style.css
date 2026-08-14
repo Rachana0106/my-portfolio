@@ -1404,3 +1404,1965 @@ footer h3 {
     padding: 30px 22px;
   }
 }
+/* =========================================================
+   EXPERIENCE SECTION
+========================================================= */
+
+#experience {
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(174, 235, 255, 0.35),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #fcfaff, #f8f3ff);
+}
+
+#experience > h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 3.2rem);
+  color: #322a40;
+  margin-bottom: 55px;
+}
+
+.experience-container {
+  max-width: 1050px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.experience-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 25px;
+  padding: 32px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid rgba(180, 140, 255, 0.2);
+
+  border-radius: 28px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.experience-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 170px;
+  height: 170px;
+
+  border-radius: 50%;
+
+  right: -80px;
+  top: -80px;
+
+  background: linear-gradient(135deg, #b48cff, #aeebff);
+
+  opacity: 0.12;
+}
+
+.experience-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow: 0 20px 45px rgba(180, 140, 255, 0.16);
+}
+
+.experience-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  font-size: 1.8rem;
+
+  background: linear-gradient(135deg, #f0e7ff, #eaf9ff);
+}
+
+.experience-content {
+  position: relative;
+  z-index: 2;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.experience-header h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 1.4rem;
+
+  color: #674da2;
+
+  margin-bottom: 5px;
+}
+
+.experience-header h4 {
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  color: #8b7a9b;
+}
+
+.experience-date {
+  white-space: nowrap;
+
+  height: fit-content;
+
+  padding: 7px 13px;
+
+  border-radius: 999px;
+
+  background: #f1eaff;
+
+  color: #7254b5;
+
+  font-size: 0.82rem;
+
+  font-weight: 600;
+}
+
+.experience-content > p {
+  color: #666;
+
+  line-height: 1.75;
+
+  margin-bottom: 18px;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.experience-tags span {
+  padding: 7px 12px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #f4edff, #effaff);
+
+  border: 1px solid #e7daff;
+
+  color: #694da8;
+
+  font-size: 0.8rem;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   CERTIFICATIONS
+========================================================= */
+
+#certifications {
+  background: linear-gradient(135deg, #f6efff, #f1fbff);
+
+  text-align: center;
+}
+
+#certifications > h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(2.5rem, 5vw, 3.2rem);
+
+  color: #322a40;
+
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  max-width: 650px;
+
+  margin: 0 auto 45px;
+
+  color: #777;
+
+  line-height: 1.7;
+}
+
+.certifications-grid {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+.certificate-card {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 35px;
+
+  text-align: left;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid #eadfff;
+
+  border-radius: 28px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+
+  transition: 0.4s ease;
+}
+
+.certificate-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 160px;
+  height: 160px;
+
+  border-radius: 50%;
+
+  top: -85px;
+  right: -70px;
+
+  background: linear-gradient(135deg, #b48cff, #aeebff);
+
+  opacity: 0.14;
+}
+
+.certificate-card:nth-child(2)::before {
+  background: linear-gradient(135deg, #ffd6e8, #b48cff);
+}
+
+.certificate-card:nth-child(3)::before {
+  background: linear-gradient(135deg, #aeebff, #b48cff);
+}
+
+.certificate-card:nth-child(4)::before {
+  background: linear-gradient(135deg, #ffd6e8, #aeebff);
+}
+
+.certificate-card:hover {
+  transform: translateY(-9px);
+
+  box-shadow: 0 22px 45px rgba(180, 140, 255, 0.17);
+}
+
+.certificate-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 18px;
+
+  font-size: 1.65rem;
+
+  background: linear-gradient(135deg, #f1eaff, #eaf9ff);
+}
+
+.certificate-card h3 {
+  position: relative;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 1.35rem;
+
+  color: #674da2;
+
+  margin-bottom: 7px;
+}
+
+.certificate-provider {
+  color: #a17ceb !important;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+.certificate-card > p:not(.certificate-provider) {
+  color: #6e6874;
+
+  line-height: 1.7;
+
+  margin-bottom: 23px;
+}
+
+.certificate-btn {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #b48cff, #a77bef);
+
+  color: white;
+
+  font-size: 0.88rem;
+
+  font-weight: 600;
+
+  box-shadow: 0 8px 18px rgba(180, 140, 255, 0.23);
+
+  transition: 0.3s ease;
+}
+
+.certificate-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 24px rgba(180, 140, 255, 0.35);
+}
+
+/* =========================================================
+   EXTRA PORTFOLIO DOODLES
+========================================================= */
+
+.d6 {
+  right: 6%;
+  top: 1050px;
+  animation-delay: 0.7s;
+}
+
+.d7 {
+  left: 4%;
+  top: 1280px;
+  animation-delay: 1.4s;
+}
+
+.d8 {
+  right: 4%;
+  top: 1550px;
+  animation-delay: 0.3s;
+}
+
+.d9 {
+  left: 3%;
+  top: 1850px;
+
+  font-family: monospace;
+  font-weight: 700;
+
+  color: #9c74e9;
+
+  animation-delay: 1.8s;
+}
+
+.d10 {
+  right: 5%;
+  top: 2150px;
+
+  color: #b48cff;
+
+  animation-delay: 0.9s;
+}
+
+.d11 {
+  left: 5%;
+  top: 2450px;
+  animation-delay: 1.2s;
+}
+
+.d12 {
+  right: 4%;
+  top: 2750px;
+
+  font-size: 38px;
+
+  color: #b48cff;
+
+  animation-delay: 0.5s;
+}
+
+/* Different floating timings */
+
+.d1 {
+  animation-duration: 5.5s;
+}
+
+.d2 {
+  animation-duration: 7s;
+}
+
+.d3 {
+  animation-duration: 6.2s;
+}
+
+.d4 {
+  animation-duration: 8s;
+}
+
+.d5 {
+  animation-duration: 5.8s;
+}
+
+.d6 {
+  animation-duration: 7.5s;
+}
+
+.d7 {
+  animation-duration: 6.5s;
+}
+
+.d8 {
+  animation-duration: 8.5s;
+}
+
+.d9 {
+  animation-duration: 7.2s;
+}
+
+.d10 {
+  animation-duration: 5.2s;
+}
+
+.d11 {
+  animation-duration: 8.2s;
+}
+
+.d12 {
+  animation-duration: 6.8s;
+}
+
+/* =========================================================
+   RESPONSIVE EXPERIENCE + CERTIFICATES
+========================================================= */
+
+@media (max-width: 850px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .experience-date {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-card {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-card {
+    padding: 28px;
+  }
+}
+/* =========================================================
+   CERTIFICATIONS SECTION
+========================================================= */
+
+#certifications {
+  position: relative;
+  overflow: hidden;
+
+  padding: 100px 8%;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 214, 232, 0.55),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(174, 235, 255, 0.45),
+      transparent 25%
+    ),
+    linear-gradient(135deg, #fffaff, #f8f2ff, #f4fbff);
+}
+
+.certifications-container {
+  max-width: 1150px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* HEADING */
+
+.cert-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.cert-small-title {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #a27bdc;
+}
+
+.cert-heading h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(2.5rem, 5vw, 3.4rem);
+
+  color: #3c3148;
+
+  margin-bottom: 12px;
+}
+
+.cert-heading p {
+  max-width: 650px;
+  margin: auto;
+
+  color: #756d7c;
+
+  line-height: 1.7;
+}
+
+/* GRID */
+
+.certifications-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 28px;
+}
+
+/* CARD */
+
+.certificate-card {
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid rgba(180, 140, 255, 0.22);
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(76, 55, 100, 0.08);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 25px 55px rgba(180, 140, 255, 0.17);
+}
+
+/* CERTIFICATE IMAGE */
+
+.certificate-preview {
+  height: 240px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #f7f3fb;
+}
+
+.certificate-preview img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 12px;
+
+  transition: transform 0.45s ease;
+}
+
+.certificate-card:hover .certificate-preview img {
+  transform: scale(1.035);
+}
+
+/* IMAGE HOVER */
+
+.certificate-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(72, 53, 92, 0.5);
+
+  opacity: 0;
+
+  transition: 0.35s ease;
+}
+
+.certificate-preview:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.preview-btn {
+  padding: 11px 20px;
+
+  border-radius: 999px;
+
+  background: white;
+
+  color: #7655b2;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* PDF PREVIEW */
+
+.pdf-certificate-preview {
+  height: 240px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 30px;
+
+  background: linear-gradient(135deg, #efe4ff, #f8efff, #e8f8ff);
+}
+
+.pdf-icon {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.pdf-certificate-preview span {
+  font-size: 0.75rem;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  color: #9b79d3;
+
+  margin-bottom: 8px;
+}
+
+.pdf-certificate-preview strong {
+  font-family: "Playfair Display", serif;
+
+  font-size: 1.55rem;
+
+  color: #554267;
+
+  margin-bottom: 7px;
+}
+
+.pdf-certificate-preview small {
+  color: #8c8195;
+}
+
+.specialization-preview {
+  background: linear-gradient(135deg, #fff0f6, #f2e9ff, #edfaff);
+}
+
+/* CONTENT */
+
+.certificate-content {
+  padding: 28px;
+}
+
+.certificate-type {
+  display: inline-block;
+
+  padding: 6px 11px;
+
+  margin-bottom: 13px;
+
+  border-radius: 999px;
+
+  background: #f1e9ff;
+
+  color: #7c5ab5;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.certificate-content h3 {
+  font-family: "Playfair Display", serif;
+
+  color: #4d3c5b;
+
+  font-size: 1.35rem;
+
+  margin-bottom: 7px;
+}
+
+.certificate-content h4 {
+  color: #9875c8;
+
+  font-size: 0.88rem;
+
+  margin-bottom: 12px;
+}
+
+.certificate-content p {
+  color: #706878;
+
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+
+  font-size: 0.92rem;
+}
+
+.certificate-link {
+  display: inline-block;
+
+  color: #805eb8;
+
+  font-weight: 700;
+
+  font-size: 0.88rem;
+
+  transition: 0.3s ease;
+}
+
+.certificate-link:hover {
+  transform: translateX(4px);
+
+  color: #60418f;
+}
+
+/* INTERNSHIP CARD */
+
+.internship-certificate {
+  grid-column: 1 / -1;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(300px, 0.9fr)
+    minmax(300px, 1.1fr);
+}
+
+.internship-certificate .certificate-preview {
+  height: 100%;
+  min-height: 330px;
+}
+
+.internship-label {
+  background: linear-gradient(135deg, #f0e5ff, #e5f8ff);
+
+  color: #68469e;
+}
+
+/* =========================================================
+   CERTIFICATION DOODLES
+========================================================= */
+
+.cert-doodle {
+  position: absolute;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  opacity: 0.55;
+
+  user-select: none;
+
+  animation: certFloat 6s ease-in-out infinite;
+}
+
+.cert-doodle-1 {
+  top: 9%;
+  left: 5%;
+
+  font-size: 32px;
+
+  animation-duration: 5s;
+}
+
+.cert-doodle-2 {
+  top: 28%;
+  right: 4%;
+
+  font-size: 40px;
+
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+.cert-doodle-3 {
+  bottom: 14%;
+  left: 3%;
+
+  font-size: 35px;
+
+  color: #ae8ce7;
+
+  animation-duration: 6s;
+  animation-delay: 0.5s;
+}
+
+.cert-doodle-4 {
+  bottom: 6%;
+  right: 6%;
+
+  font-size: 38px;
+
+  animation-duration: 8s;
+}
+
+.cert-doodle-5 {
+  top: 52%;
+  left: 2%;
+
+  font-size: 42px;
+
+  color: #d3a8e8;
+
+  animation-duration: 6.5s;
+  animation-delay: 1.5s;
+}
+
+@keyframes certFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-14px) rotate(5deg);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE CERTIFICATES
+========================================================= */
+
+@media (max-width: 850px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .internship-certificate {
+    grid-column: auto;
+
+    display: block;
+  }
+
+  .internship-certificate .certificate-preview {
+    min-height: auto;
+    height: 240px;
+  }
+}
+
+@media (max-width: 550px) {
+  #certifications {
+    padding: 75px 5%;
+  }
+
+  .certificate-preview,
+  .pdf-certificate-preview {
+    height: 200px;
+  }
+
+  .certificate-content {
+    padding: 23px;
+  }
+
+  .cert-doodle {
+    opacity: 0.25;
+  }
+}
+/* =========================================================
+   EXPERIENCE SECTION
+========================================================= */
+
+#experience {
+  position: relative;
+  overflow: hidden;
+
+  padding: 100px 8%;
+
+  background:
+    radial-gradient(
+      circle at 8% 25%,
+      rgba(255, 214, 232, 0.45),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 75%,
+      rgba(174, 235, 255, 0.4),
+      transparent 25%
+    ),
+    linear-gradient(135deg, #fffaff, #faf6ff, #f5fbff);
+}
+
+.experience-container {
+  max-width: 1050px;
+  margin: auto;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.experience-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.experience-small-title {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  color: #a27bdc;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.experience-heading h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(2.5rem, 5vw, 3.4rem);
+
+  color: #3c3148;
+
+  margin-bottom: 12px;
+}
+
+.experience-heading p {
+  max-width: 650px;
+  margin: auto;
+
+  color: #756d7c;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.experience-timeline {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 35px;
+}
+
+.experience-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 31px;
+  top: 30px;
+  bottom: 30px;
+
+  width: 2px;
+
+  background: linear-gradient(#b48cff, #ffd6e8, #aeebff);
+}
+
+.experience-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 65px 1fr;
+
+  gap: 25px;
+}
+
+/* =========================
+   TIMELINE ICON
+========================= */
+
+.timeline-marker {
+  position: relative;
+
+  z-index: 3;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #f0e5ff, #fff0f7, #e9f9ff);
+
+  border: 4px solid white;
+
+  box-shadow: 0 8px 25px rgba(180, 140, 255, 0.2);
+
+  font-size: 1.5rem;
+}
+
+/* =========================
+   EXPERIENCE CARD
+========================= */
+
+.experience-card {
+  position: relative;
+
+  padding: 32px;
+
+  background: rgba(255, 255, 255, 0.93);
+
+  border: 1px solid rgba(180, 140, 255, 0.2);
+
+  border-radius: 28px;
+
+  box-shadow: 0 15px 40px rgba(76, 55, 100, 0.07);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.experience-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -90px;
+  top: -90px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #b48cff, #aeebff);
+
+  opacity: 0.1;
+}
+
+.experience-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow: 0 23px 50px rgba(180, 140, 255, 0.16);
+}
+
+/* Slight emphasis for internship */
+
+.featured-experience {
+  border: 1px solid rgba(180, 140, 255, 0.35);
+}
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.experience-top {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 25px;
+
+  margin-bottom: 20px;
+}
+
+.experience-type {
+  display: inline-block;
+
+  padding: 6px 11px;
+
+  margin-bottom: 12px;
+
+  border-radius: 999px;
+
+  background: #f1e9ff;
+
+  color: #7654ad;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.experience-top h3 {
+  font-family: "Playfair Display", serif;
+
+  color: #4d3c5b;
+
+  font-size: 1.5rem;
+
+  margin-bottom: 6px;
+}
+
+.experience-top h4 {
+  color: #9875c8;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+}
+
+.experience-date {
+  flex-shrink: 0;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #f0e6ff, #edfaff);
+
+  color: #7353a7;
+
+  font-size: 0.82rem;
+
+  font-weight: 700;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.experience-description {
+  position: relative;
+  z-index: 2;
+
+  color: #6f6876;
+
+  line-height: 1.75;
+
+  margin-bottom: 18px;
+}
+
+/* =========================
+   BULLETS
+========================= */
+
+.experience-points {
+  position: relative;
+  z-index: 2;
+
+  padding-left: 20px;
+
+  margin-bottom: 22px;
+}
+
+.experience-points li {
+  color: #6b6471;
+
+  line-height: 1.7;
+
+  margin-bottom: 7px;
+}
+
+/* =========================
+   SKILL TAGS
+========================= */
+
+.experience-skills {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 22px;
+}
+
+.experience-skills span {
+  padding: 7px 12px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #f4edff, #eefaff);
+
+  border: 1px solid #e8ddf8;
+
+  color: #7252a5;
+
+  font-size: 0.78rem;
+
+  font-weight: 600;
+}
+
+/* =========================
+   CERTIFICATE LINK
+========================= */
+
+.experience-certificate {
+  position: relative;
+  z-index: 2;
+
+  display: inline-block;
+
+  color: #805eb8;
+
+  font-size: 0.88rem;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.experience-certificate:hover {
+  color: #60418f;
+
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   EXPERIENCE DOODLES
+========================================================= */
+
+.exp-doodle {
+  position: absolute;
+
+  pointer-events: none;
+
+  user-select: none;
+
+  z-index: 1;
+
+  opacity: 0.48;
+
+  animation: experienceFloat 6s ease-in-out infinite;
+}
+
+.exp-doodle-1 {
+  left: 4%;
+  top: 12%;
+
+  font-size: 38px;
+
+  animation-duration: 5.5s;
+}
+
+.exp-doodle-2 {
+  right: 6%;
+  top: 18%;
+
+  font-size: 30px;
+
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+
+.exp-doodle-3 {
+  left: 3%;
+  top: 58%;
+
+  font-size: 27px;
+
+  font-family: monospace;
+
+  font-weight: 700;
+
+  color: #a27bdc;
+
+  animation-duration: 6.5s;
+}
+
+.exp-doodle-4 {
+  right: 4%;
+  bottom: 16%;
+
+  font-size: 38px;
+
+  animation-duration: 8s;
+  animation-delay: 0.5s;
+}
+
+.exp-doodle-5 {
+  left: 8%;
+  bottom: 5%;
+
+  font-size: 32px;
+
+  color: #c69ee9;
+
+  animation-duration: 5s;
+  animation-delay: 1.2s;
+}
+
+@keyframes experienceFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+  #experience {
+    padding: 75px 5%;
+  }
+
+  .experience-timeline::before {
+    display: none;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-marker {
+    width: 55px;
+    height: 55px;
+  }
+
+  .experience-top {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .experience-date {
+    width: fit-content;
+  }
+
+  .experience-card {
+    padding: 25px;
+  }
+
+  .exp-doodle {
+    opacity: 0.22;
+  }
+}
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* keep every certificate same grid width */
+
+.certificate-card {
+  width: 100%;
+}
+
+/* IMPORTANT:
+   remove full-width internship styling
+*/
+
+.internship-certificate {
+  grid-column: auto;
+  display: block;
+}
+
+/* make all preview areas same height */
+
+.certificate-preview {
+  height: 250px;
+}
+
+/* Maxim image same size behavior */
+
+.internship-certificate .certificate-preview {
+  height: 250px;
+  min-height: 250px;
+}
+
+/* make the cards visually equal */
+
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate-content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate-content .certificate-link {
+  margin-top: auto;
+}
+
+/* responsive */
+
+@media (max-width: 850px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-preview,
+  .internship-certificate .certificate-preview {
+    height: 230px;
+    min-height: 230px;
+  }
+}
+
+/* =====================================================
+   SECTION DOODLES
+===================================================== */
+
+.doodle-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-doodle {
+  position: absolute;
+  z-index: 0;
+
+  font-size: 28px;
+  opacity: 0.28;
+
+  pointer-events: none;
+  user-select: none;
+
+  animation: doodleFloat 6s ease-in-out infinite;
+}
+
+/* LEFT DOODLE */
+
+.doodle-left {
+  left: 3%;
+  top: 25%;
+}
+
+/* RIGHT DOODLE */
+
+.doodle-right {
+  right: 3%;
+  bottom: 20%;
+  animation-delay: 1.5s;
+}
+
+/* Make content stay above doodles */
+
+.doodle-section > *:not(.section-doodle) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Special abstract doodle */
+
+.unique-doodle {
+  font-size: 42px;
+  color: #a77bf3;
+  opacity: 0.22;
+}
+
+/* Floating animation */
+
+@keyframes doodleFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-14px) rotate(6deg);
+  }
+}
+
+/* Different sections get slightly different positions */
+
+#home .doodle-left {
+  top: 18%;
+  left: 5%;
+}
+
+#home .doodle-right {
+  top: 20%;
+  right: 5%;
+  bottom: auto;
+}
+
+#about .doodle-left {
+  top: 20%;
+  left: 2%;
+}
+
+#about .doodle-right {
+  right: 4%;
+  bottom: 15%;
+}
+
+#skills .doodle-left {
+  top: 18%;
+}
+
+#skills .doodle-right {
+  bottom: 12%;
+}
+
+#projects .doodle-left {
+  top: 15%;
+}
+
+#projects .doodle-right {
+  bottom: 10%;
+}
+
+#experience .doodle-left {
+  top: 20%;
+}
+
+#experience .doodle-right {
+  bottom: 15%;
+}
+
+#certificates .doodle-left {
+  top: 15%;
+}
+
+#certificates .doodle-right {
+  bottom: 12%;
+}
+
+#resume .doodle-left {
+  top: 25%;
+}
+
+#resume .doodle-right {
+  bottom: 20%;
+}
+
+#contact .doodle-left {
+  top: 20%;
+}
+
+#contact .doodle-right {
+  bottom: 15%;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .section-doodle {
+    font-size: 19px;
+    opacity: 0.18;
+  }
+
+  .doodle-right {
+    display: none;
+  }
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 270px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 60px 8%;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 10% 30%,
+      rgba(255, 214, 232, 0.45),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 70%,
+      rgba(174, 235, 255, 0.45),
+      transparent 25%
+    ),
+    linear-gradient(135deg, #f8f1ff, #eef9ff);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-content h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(2rem, 4vw, 2.7rem);
+
+  color: #403449;
+
+  margin-bottom: 24px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 25px;
+
+  margin-bottom: 22px;
+}
+
+.footer-links a {
+  color: #9367db;
+
+  font-weight: 600;
+
+  font-size: 1rem;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #6944ad;
+
+  transform: translateY(-3px);
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-copy {
+  color: #77707d;
+
+  font-size: 0.85rem;
+
+  margin: 0;
+}
+
+/* =====================================================
+   FOOTER DOODLES
+===================================================== */
+
+.footer-doodle {
+  position: absolute;
+
+  z-index: 1;
+
+  opacity: 0.3;
+
+  pointer-events: none;
+
+  animation: footerDoodleFloat 6s ease-in-out infinite;
+}
+
+/* top left */
+
+.fd1 {
+  top: 35px;
+  left: 8%;
+
+  font-size: 24px;
+}
+
+/* right */
+
+.fd2 {
+  top: 55px;
+  right: 9%;
+
+  font-size: 27px;
+
+  animation-delay: 1s;
+}
+
+/* bottom left */
+
+.fd3 {
+  bottom: 35px;
+  left: 15%;
+
+  font-size: 30px;
+
+  color: #c38de3;
+
+  animation-delay: 2s;
+}
+
+/* bottom right */
+
+.fd4 {
+  bottom: 28px;
+  right: 14%;
+
+  font-size: 25px;
+
+  animation-delay: 1.5s;
+}
+
+/* small middle decoration */
+
+.fd5 {
+  top: 35px;
+  left: 48%;
+
+  font-size: 20px;
+
+  color: #b48cff;
+
+  animation-delay: 0.5s;
+}
+
+@keyframes footerDoodleFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  footer {
+    min-height: 240px;
+    padding: 50px 20px;
+  }
+
+  .footer-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .footer-links {
+    gap: 15px;
+  }
+
+  .fd3,
+  .fd5 {
+    display: none;
+  }
+}
+/* =========================
+   SKILLS SECTION
+========================= */
+
+#skills {
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #f7f3ff 0%, #f3f7ff 50%, #eefaff 100%);
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+/* 3 CARD GRID */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* SKILL CARD */
+
+.skill-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 35px 28px;
+  min-height: 280px;
+  border-radius: 28px;
+  border: 1px solid rgba(168, 120, 255, 0.15);
+  box-shadow: 0 15px 35px rgba(110, 90, 160, 0.08);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(110, 90, 160, 0.13);
+}
+
+/* DECORATIVE CORNER */
+
+.skill-card::after {
+  content: "";
+  position: absolute;
+  top: -45px;
+  right: -45px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(174, 145, 255, 0.1),
+    rgba(255, 190, 220, 0.1)
+  );
+}
+
+/* CARD TITLE */
+
+.skill-card h3 {
+  position: relative;
+  z-index: 1;
+  color: #7651c9;
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+
+/* SKILL TAGS */
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-tags span {
+  display: inline-block;
+  padding: 9px 16px;
+  background: #f7f2ff;
+  border: 1px solid #dfd0ff;
+  border-radius: 50px;
+  color: #674bb5;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.skill-tags span:hover {
+  transform: translateY(-2px);
+  background: #efe5ff;
+  box-shadow: 0 5px 12px rgba(118, 81, 201, 0.1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+  }
+
+  .skill-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #skills {
+    padding: 60px 6%;
+  }
+
+  #skills h2 {
+    font-size: 34px;
+  }
+
+  .skill-card {
+    padding: 28px 22px;
+    border-radius: 22px;
+  }
+
+  .skill-card h3 {
+    font-size: 19px;
+  }
+
+  .skill-tags span {
+    font-size: 13px;
+    padding: 8px 13px;
+  }
+}
